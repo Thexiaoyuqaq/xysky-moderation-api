@@ -1,0 +1,88 @@
+{
+  "profanity": {
+    "name": "辱骂与人身攻击",
+    "level": "medium",
+    "severity": 2,
+    "action": "replace"
+  },
+  "sexual": {
+    "name": "色情与性暗示",
+    "level": "high",
+    "severity": 3,
+    "action": "replace"
+  },
+  "violence": {
+    "name": "暴力与威胁",
+    "level": "high",
+    "severity": 4,
+    "action": "block"
+  },
+  "selfharm": {
+    "name": "自残与自杀",
+    "level": "critical",
+    "severity": 4,
+    "action": "review",
+    "neverBlock": true,
+    "maxAction": "review"
+  },
+  "hate": {
+    "name": "仇恨与歧视",
+    "level": "critical",
+    "severity": 4,
+    "action": "block"
+  },
+  "politics": {
+    "name": "政治敏感",
+    "level": "critical",
+    "severity": 4,
+    "action": "block"
+  },
+  "gambling": {
+    "name": "赌博",
+    "level": "high",
+    "severity": 4,
+    "action": "block"
+  },
+  "fraud": {
+    "name": "诈骗与黑产",
+    "level": "high",
+    "severity": 4,
+    "action": "block"
+  },
+  "advertisement": {
+    "name": "广告与引流",
+    "level": "medium",
+    "severity": 2,
+    "action": "replace"
+  },
+  "spam": {
+    "name": "刷屏与垃圾信息",
+    "level": "low",
+    "severity": 1,
+    "action": "review"
+  },
+  "privacy": {
+    "name": "个人信息",
+    "level": "high",
+    "severity": 3,
+    "action": "replace"
+  },
+  "cheating": {
+    "name": "作弊与服务器攻击",
+    "level": "high",
+    "severity": 4,
+    "action": "block"
+  },
+  "minor_safety": {
+    "name": "未成年人与儿童安全",
+    "level": "critical",
+    "severity": 4,
+    "action": "block"
+  },
+  "evasion": {
+    "name": "规避检测",
+    "level": "low",
+    "severity": 1,
+    "action": "review"
+  }
+}

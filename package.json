@@ -1,0 +1,25 @@
+{
+  "name": "xysky-moderation-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone content moderation API for the XYSKY game server",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js",
+    "test": "node --test test/",
+    "validate": "node tools/validateDictionary.js",
+    "check": "node tools/testText.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "js-yaml": "^5.4.1",
+    "lru-cache": "^11.5.3",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "author": "Thexiaoyu",
+  "license": "MIT"
+}

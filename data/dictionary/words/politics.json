@@ -1,0 +1,22 @@
+{
+  "category": "politics",
+  "entries": [
+    { "id": "politics.falun", "word": "法轮", "aliases": ["法轮功", "falun"] },
+    { "id": "politics.tiananmen", "word": "天安门" },
+    { "id": "politics.liusi", "word": "六四事件", "aliases": ["八九民运"] },
+    { "id": "politics.taidu", "word": "台独", "aliases": ["台湾独立"] },
+    { "id": "politics.zangdu", "word": "藏独", "aliases": ["西藏独立"] },
+    { "id": "politics.jiangdu", "word": "疆独", "aliases": ["新疆独立"] },
+    { "id": "politics.gangdu", "word": "港独", "aliases": ["香港独立"] },
+    { "id": "politics.fenlieguojia", "word": "分裂国家" },
+    { "id": "politics.dianfuguojia", "word": "颠覆国家" },
+    { "id": "politics.tuifanzhengfu", "word": "推翻政府" },
+    { "id": "politics.dadaogongchandang", "word": "打倒共产党" },
+    { "id": "politics.fanqiang", "word": "翻墙", "aliases": ["科学上网"], "severity": 2, "action": "review" },
+    { "id": "politics.vpn", "word": "vpn", "severity": 1, "action": "review" },
+    { "id": "politics.hexie", "word": "河蟹", "severity": 1, "action": "review" },
+    { "id": "politics.ruhua", "word": "乳化", "severity": 1, "action": "review" },
+    { "id": "politics.minyun", "word": "民运", "severity": 2, "action": "review" },
+    { "id": "politics.fangong", "word": "反共", "severity": 1, "action": "review" }
+  ]
+}

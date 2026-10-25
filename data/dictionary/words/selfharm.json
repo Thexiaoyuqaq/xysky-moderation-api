@@ -1,0 +1,24 @@
+{
+  "category": "selfharm",
+  "entries": [
+    { "id": "selfharm.zisha", "word": "自杀", "aliases": ["紫砂", { "word": "zs", "severity": 1, "action": "review" }] },
+    { "id": "selfharm.qingsheng", "word": "轻生" },
+    { "id": "selfharm.zican", "word": "自残" },
+    { "id": "selfharm.gewan", "word": "割腕" },
+    { "id": "selfharm.tiaolou", "word": "跳楼" },
+    { "id": "selfharm.shangdiao", "word": "上吊" },
+    { "id": "selfharm.shaotan", "word": "烧炭" },
+    { "id": "selfharm.fudu", "word": "服毒" },
+    { "id": "selfharm.jieshushengming", "word": "结束生命" },
+    { "id": "selfharm.buxianghuole", "word": "不想活了" },
+    { "id": "selfharm.huozhemeiyisi", "word": "活着没意思" },
+    { "id": "selfharm.yiliaobailiao", "word": "一了百了", "severity": 1, "action": "review" },
+    { "id": "selfharm.anmianyaozisha", "word": "安眠药自杀" },
+    { "id": "selfharm.zishafangfa", "word": "自杀方法" },
+    { "id": "selfharm.killmyself", "word": "kill myself", "match": "cjk" },
+    { "id": "selfharm.suicide", "word": "suicide", "severity": 3, "action": "review" },
+    { "id": "selfharm.kys", "word": "kys", "severity": 2, "action": "review" },
+    { "id": "selfharm.killyourself", "word": "kill yourself", "match": "cjk" },
+    { "id": "selfharm.selfharm_phrase", "word": "self harm", "match": "cjk" }
+  ]
+}

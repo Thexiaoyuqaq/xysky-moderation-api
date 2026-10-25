@@ -1,0 +1,15 @@
+{
+  "category": "spam",
+  "entries": [
+    { "id": "spam.shuaping", "word": "刷屏" },
+    { "id": "spam.daishua", "word": "代刷" },
+    { "id": "spam.shuapingruanjian", "word": "刷屏软件" },
+    { "id": "spam.zidongfaxiaoxi", "word": "自动发消息" },
+    { "id": "spam.qunfa", "word": "群发" },
+    { "id": "spam.qunfaqi", "word": "群发器" },
+    { "id": "spam.guanggaoji", "word": "广告机" },
+    { "id": "spam.jiqirenshuaping", "word": "机器人刷屏" },
+    { "id": "spam.lianxufasong", "word": "连续发送" },
+    { "id": "spam.chongfufasong", "word": "重复发送" }
+  ]
+}

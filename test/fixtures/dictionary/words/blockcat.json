@@ -1,0 +1,18 @@
+{
+  "category": "blockcat",
+  "entries": [
+    { "id": "block.badword", "word": "badword" },
+    { "id": "block.falun", "word": "法轮", "aliases": ["fl", "falun"] },
+    { "id": "block.nickonly", "word": "nickonly", "scopes": ["nickname"] },
+    { "id": "block.av", "word": "av" },
+    { "id": "block.trash", "word": "垃圾" },
+    {
+      "id": "block.shabi",
+      "word": "傻逼",
+      "aliases": [
+        { "word": "sb", "severity": 1, "action": "review" }
+      ],
+      "maxGap": 2
+    }
+  ]
+}

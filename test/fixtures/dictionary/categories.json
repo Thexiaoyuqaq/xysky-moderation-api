@@ -1,0 +1,45 @@
+{
+  "blockcat": {
+    "name": "Block",
+    "level": "high",
+    "severity": 4,
+    "action": "block"
+  },
+  "replacecat": {
+    "name": "Replace",
+    "level": "medium",
+    "severity": 2,
+    "action": "replace"
+  },
+  "reviewcat": {
+    "name": "Review",
+    "level": "low",
+    "severity": 1,
+    "action": "review"
+  },
+  "selfharm": {
+    "name": "Self harm",
+    "level": "critical",
+    "severity": 4,
+    "action": "review",
+    "neverBlock": true
+  },
+  "spam": {
+    "name": "Spam",
+    "level": "low",
+    "severity": 1,
+    "action": "review"
+  },
+  "privacy": {
+    "name": "Privacy",
+    "level": "high",
+    "severity": 3,
+    "action": "replace"
+  },
+  "evasion": {
+    "name": "Evasion",
+    "level": "low",
+    "severity": 1,
+    "action": "review"
+  }
+}

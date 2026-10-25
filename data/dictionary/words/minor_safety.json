@@ -1,0 +1,18 @@
+{
+  "category": "minor_safety",
+  "entries": [
+    { "id": "minor_safety.ertongseqing", "word": "儿童色情" },
+    { "id": "minor_safety.weichengnianseqing", "word": "未成年色情" },
+    { "id": "minor_safety.weichengnianluozhao", "word": "未成年裸照" },
+    { "id": "minor_safety.younv", "word": "幼女" },
+    { "id": "minor_safety.youjiao", "word": "幼交" },
+    { "id": "minor_safety.liantong", "word": "恋童" },
+    { "id": "minor_safety.liantonghu", "word": "炼铜", "severity": 3 },
+    { "id": "minor_safety.kaitongche", "word": "开童车" },
+    { "id": "minor_safety.youguaiertong", "word": "诱拐儿童" },
+    { "id": "minor_safety.guaimaiertong", "word": "拐卖儿童" },
+    { "id": "minor_safety.ertongxingqin", "word": "儿童性侵" },
+    { "id": "minor_safety.weichengnianyuepao", "word": "未成年约炮" },
+    { "id": "minor_safety.weichengniankaifang", "word": "未成年开房" }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "category": "reviewcat",
+  "entries": [
+    { "id": "review.spammy", "word": "spammy" },
+    { "id": "review.nt", "word": "nt" }
+  ]
+}

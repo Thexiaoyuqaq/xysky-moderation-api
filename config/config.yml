@@ -1,0 +1,62 @@
+server:
+  host: "0.0.0.0"
+  port: 8787
+
+auth:
+  # Empty = open access (bind to 127.0.0.1 in that case).
+  # Set a long random value and configure the same value as
+  # contentModeration.apiToken in the game server.
+  token: ""
+
+dictionary:
+  # Directory, not a single file. See data/dictionary/.
+  path: "./data/dictionary"
+  # Optional override for the version reported by /health and /v1/moderate.
+  version: ""
+
+moderation:
+  replacementChar: "*"
+  maxTextLength: 2000
+  defaultScope: "chat"
+  # Maximum raw characters a CJK match may skip internally (spaces, emoji,
+  # punctuation). `傻 逼` (1) and `傻😀逼` (2) hit; a long gap does not.
+  maxGap: 2
+  logViolations: true
+  escalation:
+    enabled: true
+    # Add one severity step when a message has this many hits in one category,
+    # or this much total severity. Overlapping hits on the same span count once.
+    sameCategory: 3
+    totalSeverity: 6
+  scopes:
+    # `review` is useless for nicknames (the client shows the original text),
+    # so mask it instead.
+    nickname:
+      reviewAction: "replace"
+
+cache:
+  enabled: true
+  maxEntries: 5000
+  ttlSeconds: 300
+
+rateLimit:
+  enabled: true
+  windowMs: 10000
+  max: 120
+  maxBuckets: 10000
+
+# Optional in-process history. Only hashes/timestamps are stored.
+state:
+  enabled: true
+  ttlSeconds: 600
+  maxUsers: 20000
+  duplicateWindowMs: 60000
+  duplicateThreshold: 3
+  violationWindowMs: 600000
+  violationThreshold: 3
+  flood:
+    windowMs: 10000
+    max: 8
+
+heuristics:
+  enabled: true

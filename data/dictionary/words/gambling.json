@@ -1,0 +1,32 @@
+{
+  "category": "gambling",
+  "entries": [
+    { "id": "gambling.dubo", "word": "赌博" },
+    { "id": "gambling.duqian", "word": "赌钱" },
+    { "id": "gambling.duchang", "word": "赌场" },
+    { "id": "gambling.wangdu", "word": "网赌" },
+    { "id": "gambling.duqiu", "word": "赌球" },
+    { "id": "gambling.duma", "word": "赌马" },
+    { "id": "gambling.bocai", "word": "博彩" },
+    { "id": "gambling.xiazhu", "word": "下注" },
+    { "id": "gambling.yazhu", "word": "押注" },
+    { "id": "gambling.pankou", "word": "盘口" },
+    { "id": "gambling.suoha", "word": "梭哈", "severity": 2, "action": "replace" },
+    { "id": "gambling.liuhecai", "word": "六合彩" },
+    { "id": "gambling.shishicai", "word": "时时彩" },
+    { "id": "gambling.baijiale", "word": "百家乐" },
+    { "id": "gambling.laohuji", "word": "老虎机" },
+    { "id": "gambling.caipiaodaigou", "word": "彩票代购" },
+    { "id": "gambling.sicai", "word": "私彩" },
+    { "id": "gambling.duzi", "word": "赌资" },
+    { "id": "gambling.xiqian", "word": "洗钱" },
+    { "id": "gambling.paofen", "word": "跑分" },
+    { "id": "gambling.heiqian", "word": "黑钱" },
+    { "id": "gambling.chouma", "word": "筹码", "severity": 1, "action": "review" },
+    { "id": "gambling.zhuangxian", "word": "庄闲", "severity": 2, "action": "replace" },
+    { "id": "gambling.beijingsaiche", "word": "北京赛车" },
+    { "id": "gambling.xingyunfeiting", "word": "幸运飞艇" },
+    { "id": "gambling.bet365", "word": "bet365" },
+    { "id": "gambling.1xbet", "word": "1xbet" }
+  ]
+}

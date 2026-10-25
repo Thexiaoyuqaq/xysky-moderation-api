@@ -1,0 +1,31 @@
+{
+  "category": "hate",
+  "entries": [
+    { "id": "hate.heigui", "word": "黑鬼" },
+    { "id": "hate.baipizhu", "word": "白皮猪" },
+    { "id": "hate.asan", "word": "阿三", "severity": 2 },
+    { "id": "hate.zhina", "word": "支那", "aliases": ["支那人"] },
+    { "id": "hate.tabazi", "word": "台巴子" },
+    { "id": "hate.gangcan", "word": "港灿" },
+    { "id": "hate.sigay", "word": "死gay", "severity": 3 },
+    { "id": "hate.jilao", "word": "基佬", "severity": 1, "action": "review" },
+    { "id": "hate.niangpao", "word": "娘炮", "severity": 2 },
+    { "id": "hate.renyao", "word": "人妖", "severity": 2 },
+    { "id": "hate.naci", "word": "纳粹", "severity": 2, "action": "review" },
+    { "id": "hate.xitele", "word": "希特勒", "severity": 2, "action": "review" },
+    { "id": "hate.faxisi", "word": "法西斯", "severity": 2, "action": "review" },
+    { "id": "hate.hanjian", "word": "汉奸", "severity": 2 },
+    { "id": "hate.maiguozei", "word": "卖国贼", "severity": 2 },
+    { "id": "hate.zougou", "word": "走狗", "severity": 2 },
+    { "id": "hate.gouhanjian", "word": "狗汉奸", "severity": 2 },
+    { "id": "hate.dongyabingfu", "word": "东亚病夫" },
+    { "id": "hate.nigger", "word": "nigger", "aliases": ["nigga"] },
+    { "id": "hate.faggot", "word": "faggot", "aliases": [{ "word": "fag", "severity": 2, "action": "review" }] },
+    { "id": "hate.kike", "word": "kike" },
+    { "id": "hate.chink", "word": "chink" },
+    { "id": "hate.spic", "word": "spic" },
+    { "id": "hate.wetback", "word": "wetback" },
+    { "id": "hate.tranny", "word": "tranny", "severity": 2 },
+    { "id": "hate.nazi", "word": "nazi", "aliases": ["nazis"] }
+  ]
+}

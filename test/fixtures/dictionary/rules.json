@@ -1,0 +1,34 @@
+{
+  "rules": [
+    {
+      "id": "privacy.phone",
+      "category": "privacy",
+      "pattern": "(?<![0-9])1[3-9][0-9]{9}(?![0-9])",
+      "view": "canonical",
+      "description": "手机号"
+    },
+    {
+      "id": "privacy.digits",
+      "category": "privacy",
+      "severity": 1,
+      "action": "review",
+      "pattern": "(?<![0-9])[0-9]{11}(?![0-9])",
+      "view": "canonical",
+      "description": "长数字(与手机号重叠，用于测试升级去重)"
+    },
+    {
+      "id": "privacy.url",
+      "category": "privacy",
+      "pattern": "(?:https?://|www\\.)[^\\s]{3,}",
+      "view": "canonical",
+      "description": "URL"
+    },
+    {
+      "id": "evasion.invisible",
+      "category": "evasion",
+      "pattern": "[\\u200B-\\u200F\\u2060\\uFEFF]{2,}",
+      "view": "raw",
+      "description": "不可见字符"
+    }
+  ]
+}

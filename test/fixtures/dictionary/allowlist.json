@@ -1,0 +1,7 @@
+{
+  "allowlist": [
+    { "id": "allow.badwordish", "pattern": "badwordish" },
+    { "id": "allow.trashcan", "pattern": "垃圾桶" },
+    { "id": "allow.avocado", "pattern": "avocado" }
+  ]
+}
