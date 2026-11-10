@@ -1,23 +1,18 @@
 /**
- * Per-message heuristics. These need no user state, so they still work when the
- * optional state module is disabled.
+ * Per-message heuristics that indicate structural evasion (invisible runs,
+ * Zalgo, flood-style contact spam). These need no user state, so they still
+ * work when the optional state module is disabled.
  *
  * Everything here is deliberately `review`-level: repeating "hahaha" or being
  * excited with emoji is not, by itself, a reason to block a player's message.
+ *
+ * Repetition/entropy/caps spam detection was removed: normal chat floods like
+ * "啊啊啊啊…" and "4343464643443" triggered it, and the game server does not
+ * want flood messages masked anyway (duplicate/flood handling lives in the
+ * optional state module instead).
  */
 const WORD_CHAR = /[\p{L}\p{N}]/u;
 const ASCII_LETTER = /[a-z]/i;
-
-// Characters that are normal when repeated in chat.
-const BENIGN_REPEAT = new Set([
-  '哈', '嘿', '嘻', '呵', '啊', '呀', '哦', '嗯', '呜', '喵', '哇', '呃',
-  'h', 'H', 'w', 'W', '6', '2', '3', '0', '1', '4', '5', '7', '8', '9',
-]);
-
-const BENIGN_PHRASES = new Set([
-  '谢谢', '哈哈', '嘿嘿', '呵呵', '晚安', '早安', '你好', '拜拜',
-  '233', '666',
-]);
 
 function makeHit(id, start, end, severity, action, description) {
   return {
@@ -35,80 +30,6 @@ function makeHit(id, start, end, severity, action, description) {
     start,
     end,
   };
-}
-
-function isBenignRun(char) {
-  return BENIGN_REPEAT.has(char) || !WORD_CHAR.test(char);
-}
-
-function findRepeatRun(raw) {
-  const regex = /(.)\1{5,}/gu;
-  for (const match of raw.matchAll(regex)) {
-    if (isBenignRun(match[1])) continue;
-    const length = match[0].length;
-    return makeHit(
-      'heuristic.repeat_run',
-      match.index,
-      match.index + length,
-      length >= 10 ? 2 : 1,
-      'review',
-      `单字符重复 ${length} 次`
-    );
-  }
-  return null;
-}
-
-function findRepeatedPhrase(raw) {
-  if (raw.length < 8) return null;
-
-  for (let unit = 2; unit <= 4; unit += 1) {
-    for (let start = 0; start + unit * 4 <= raw.length; start += 1) {
-      const phrase = raw.slice(start, start + unit);
-      if (!WORD_CHAR.test(phrase[0])) continue;
-      if (BENIGN_PHRASES.has(phrase)) continue;
-      if (Array.from(phrase).every(isBenignRun)) continue;
-
-      let count = 1;
-      let index = start + unit;
-      while (raw.startsWith(phrase, index)) {
-        count += 1;
-        index += unit;
-      }
-
-      const covered = index - start;
-      if (count >= 4 && covered >= raw.length * 0.6) {
-        return makeHit(
-          'heuristic.repeat_phrase',
-          start,
-          index,
-          2,
-          'review',
-          `短语重复 ${count} 次`
-        );
-      }
-    }
-  }
-  return null;
-}
-
-function findLowEntropy(raw) {
-  const chars = Array.from(raw).filter(char => WORD_CHAR.test(char));
-  if (chars.length < 12) return null;
-
-  // "666666666666" and "2333333" are celebration, not spam.
-  if (chars.every(char => char >= '0' && char <= '9')) return null;
-
-  const unique = new Set(chars).size;
-  if (unique / chars.length >= 0.28) return null;
-
-  return makeHit(
-    'heuristic.low_entropy',
-    0,
-    raw.length,
-    2,
-    'review',
-    `字符多样性低 (${unique}/${chars.length})`
-  );
 }
 
 function findSymbolFlood(raw) {
@@ -152,9 +73,6 @@ function searchHeuristics(views, options = {}) {
   if (options.enabled === false) return [];
 
   return [
-    findRepeatRun(views.raw),
-    findRepeatedPhrase(views.raw),
-    findLowEntropy(views.raw),
     findSymbolFlood(views.raw),
     findCapsFlood(views.raw),
   ].filter(Boolean);
