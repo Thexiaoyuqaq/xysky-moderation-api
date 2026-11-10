@@ -17,7 +17,6 @@
     { "id": "cheating.zidongpaotu", "word": "自动跑图" },
     { "id": "cheating.shuatujiaoben", "word": "刷图脚本" },
     { "id": "cheating.zhatu", "word": "炸图" },
-    { "id": "cheating.zhafu", "word": "炸服" },
     { "id": "cheating.gongjifuwuqi", "word": "攻击服务器" },
     { "id": "cheating.tuoku", "word": "脱裤" },
     { "id": "cheating.tuoku2", "word": "拖库" },
@@ -29,6 +28,18 @@
     { "id": "cheating.shuahuobi", "word": "刷货币" },
     { "id": "cheating.shualazhu", "word": "刷蜡烛" },
     { "id": "cheating.shuaxin", "word": "刷心", "severity": 2, "action": "review" },
-    { "id": "cheating.zhayu", "word": "炸鱼", "severity": 1, "action": "review" }
+    { "id": "cheating.zhayu", "word": "炸鱼塘", "severity": 1, "action": "review" },
+
+    { "id": "cheating.kaitu", "word": "开图", "severity": 2, "action": "review", "aliases": ["挂机脚本", "自动挂机", "多开脚本", "模拟器脚本"] },
+    { "id": "cheating.duokai", "word": "多开", "severity": 2, "action": "review", "aliases": ["多开器", "小号矩阵"] },
+    { "id": "cheating.zhangben", "word": "搬砖脚本", "severity": 3, "aliases": ["工作室脚本", "自动打金"] },
+    { "id": "cheating.daohang", "word": "盗号脚本", "severity": 4 },
+    { "id": "cheating.kaifa", "word": "破解客户端", "severity": 4, "aliases": ["改包", "抓包改", "协议破解", "逆向客户端"] },
+    { "id": "cheating.ddos", "word": "ddos", "severity": 4, "aliases": ["cc攻击", "压测服务器", "打垮服务器"] },
+    { "id": "cheating.kali", "word": "kali", "severity": 2, "action": "review" },
+    { "id": "cheating.zhuru", "word": "注入代码", "severity": 4, "aliases": ["注入器", "内存修改", "内存挂"] },
+    { "id": "cheating.zhuangbei", "word": "无限蜡烛", "severity": 4, "aliases": ["无限心", "无限季卡", "刷无限"] },
+    { "id": "cheating.duanwang", "word": "断网卡bug", "severity": 2, "action": "review", "aliases": ["卡bug", "卡墙", "卡图", "利用bug"] },
+    { "id": "cheating.xitong", "word": "越狱", "severity": 2, "action": "review", "aliases": ["root权限", "改机", "改设备"] }
   ]
 }

@@ -6,13 +6,20 @@
     { "id": "minor_safety.weichengnianluozhao", "word": "未成年裸照" },
     { "id": "minor_safety.younv", "word": "幼女" },
     { "id": "minor_safety.youjiao", "word": "幼交" },
-    { "id": "minor_safety.liantong", "word": "恋童" },
-    { "id": "minor_safety.liantonghu", "word": "炼铜", "severity": 3 },
+    { "id": "minor_safety.liantong", "word": "恋童", "aliases": ["恋童癖"] },
+    { "id": "minor_safety.liantonghu", "word": "炼铜", "severity": 3, "aliases": ["恋铜", "炼铜术士"] },
     { "id": "minor_safety.kaitongche", "word": "开童车" },
     { "id": "minor_safety.youguaiertong", "word": "诱拐儿童" },
     { "id": "minor_safety.guaimaiertong", "word": "拐卖儿童" },
     { "id": "minor_safety.ertongxingqin", "word": "儿童性侵" },
     { "id": "minor_safety.weichengnianyuepao", "word": "未成年约炮" },
-    { "id": "minor_safety.weichengniankaifang", "word": "未成年开房" }
+    { "id": "minor_safety.weichengniankaifang", "word": "未成年开房" },
+
+    { "id": "minor_safety.biegaosu", "word": "别告诉爸妈", "severity": 4, "action": "block", "description": "儿童诱骗保密话术", "aliases": ["别告诉妈妈", "别告诉爸爸", "别告诉家长", "别告诉父母", "别告诉老师", "别跟爸妈说", "别跟你妈说", "别跟你爸说", "别让爸妈知道", "别让家长知道"] },
+    { "id": "minor_safety.xiaomimi", "word": "我们的小秘密", "severity": 4, "action": "block", "description": "诱骗保密话术", "aliases": ["这是我们的秘密", "咱俩的秘密", "偷偷告诉你哦", "要保密哦"] },
+    { "id": "minor_safety.geinimaidongxi", "word": "给你买皮肤", "severity": 3, "action": "block", "aliases": ["给你充值", "给你送季卡", "给你送礼物", "送你季卡", "送皮肤给你"] },
+    { "id": "minor_safety.jiaobaba", "word": "叫爸爸", "severity": 3, "aliases": ["叫我爸爸", "认我做爸爸", "我做你爸爸", "叫我老公", "叫老公"] },
+    { "id": "minor_safety.tuoleyikan", "word": "脱了看看", "severity": 4, "action": "block", "aliases": ["脱了给我看", "脱掉看看", "脱衣服给我看", "脱给我看"] },
+    { "id": "minor_safety.jinwobeiwo", "word": "进我被窝", "severity": 4, "action": "block", "aliases": ["来我被窝", "钻我被窝", "来我房间"] }
   ]
 }

@@ -63,15 +63,20 @@ function decideVerdict(hits, options = {}) {
   const deduped = dedupeHits(hits);
 
   let maxRank = 0;
-  let hasHardHit = false;
+  let hasBlockHit = false;
+  let hasEscalatableHit = false;
 
   for (const hit of deduped) {
     let rank = rankOf(hit.action);
 
     // Self-harm and similar categories may be reported but never block.
     if (hit.neverBlock) rank = Math.min(rank, 2);
-    else if (rank > 0) hasHardHit = true;
+    else if (rank > 0) hasEscalatableHit = true;
 
+    // Only hits that were already classified as block may escalate to block.
+    // Replace-level spam (e.g. several profanity hits in one message) must not
+    // be turned into a hard block by the escalation counter.
+    if (rank === 4) hasBlockHit = true;
     if (rank > maxRank) maxRank = rank;
   }
 
@@ -80,8 +85,11 @@ function decideVerdict(hits, options = {}) {
 
   if (maxRank > 0 && escalation > 0) {
     const target = Math.min(4, maxRank + escalation);
-    // If every contributing hit is neverBlock, escalation stops at review.
-    const capped = hasHardHit ? target : Math.min(target, 2);
+    // Escalation ceiling: neverBlock-only messages stop at review; messages
+    // without a genuine block-level hit stop at replace — repeat offenses may
+    // mask more aggressively, but counting alone must not block.
+    const ceiling = hasBlockHit ? 4 : (hasEscalatableHit ? 3 : 2);
+    const capped = Math.min(target, ceiling);
     escalated = capped !== maxRank;
     maxRank = capped;
   }

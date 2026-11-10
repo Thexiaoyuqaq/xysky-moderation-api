@@ -27,6 +27,16 @@
     { "id": "gambling.beijingsaiche", "word": "北京赛车" },
     { "id": "gambling.xingyunfeiting", "word": "幸运飞艇" },
     { "id": "gambling.bet365", "word": "bet365" },
-    { "id": "gambling.1xbet", "word": "1xbet" }
+    { "id": "gambling.1xbet", "word": "1xbet" },
+
+    { "id": "gambling.kaijiang", "word": "开奖", "severity": 2, "action": "replace", "aliases": ["开奖结果", "开奖号码", "中奖号码"] },
+    { "id": "gambling.zhongjiang", "word": "中大奖", "severity": 2, "action": "replace", "aliases": ["一夜暴富", "翻倍赚钱", "稳赢"] },
+    { "id": "gambling.duju", "word": "赌局", "severity": 4, "aliases": ["开局下注", "坐庄", "抽水", "抽成"] },
+    { "id": "gambling.wangzhan", "word": "赌博网站", "severity": 4, "aliases": ["博彩网站", "下注网站", "彩票网站", "棋牌网站"] },
+    { "id": "gambling.daili", "word": "赌博代理", "severity": 4, "aliases": ["博彩代理", "平台代理", "拉人下注"] },
+    { "id": "gambling.qipai", "word": "棋牌室", "severity": 2, "action": "review", "aliases": ["线上棋牌", "德州扑克", "牛牛", "炸金花", "龙虎斗"] },
+    { "id": "gambling.dugou", "word": "赌狗", "severity": 2, "action": "review" },
+    { "id": "gambling.jieqian", "word": "借钱下注", "severity": 4 },
+    { "id": "gambling.shuaqian", "word": "刷流水", "severity": 3, "aliases": ["打流水", "做流水", "刷水"] }
   ]
 }

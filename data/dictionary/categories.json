@@ -79,6 +79,12 @@
     "severity": 4,
     "action": "block"
   },
+  "social_risk": {
+    "name": "社交诱导与线下约见",
+    "level": "medium",
+    "severity": 2,
+    "action": "review"
+  },
   "evasion": {
     "name": "规避检测",
     "level": "low",

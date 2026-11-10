@@ -1,0 +1,11 @@
+{
+  "category": "social_risk",
+  "entries": [
+    { "id": "social_risk.benxian", "word": "奔现", "severity": 2, "action": "review", "aliases": ["面基", "线下见面"] },
+    { "id": "social_risk.jianmian", "word": "见个面", "severity": 2, "action": "review", "aliases": ["见一面", "出来见", "约出来"] },
+    { "id": "social_risk.zhuzhi", "word": "你住哪", "severity": 2, "action": "review", "aliases": ["你住哪里", "你家在哪", "你在哪个城市"] },
+    { "id": "social_risk.dianhua", "word": "打电话给我", "severity": 2, "action": "review", "aliases": ["给我打电话", "电话多少", "留个电话"] },
+    { "id": "social_risk.lianmai", "word": "连麦吗", "severity": 1, "action": "review", "aliases": ["开麦吗", "语音通话吗"] },
+    { "id": "social_risk.qianwan", "word": "千万别告诉别人", "severity": 3, "aliases": ["不要告诉别人", "别告诉别人", "只告诉你一个人"] }
+  ]
+}

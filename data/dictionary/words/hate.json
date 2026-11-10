@@ -12,8 +12,6 @@
     { "id": "hate.niangpao", "word": "娘炮", "severity": 2 },
     { "id": "hate.renyao", "word": "人妖", "severity": 2 },
     { "id": "hate.naci", "word": "纳粹", "severity": 2, "action": "review" },
-    { "id": "hate.xitele", "word": "希特勒", "severity": 2, "action": "review" },
-    { "id": "hate.faxisi", "word": "法西斯", "severity": 2, "action": "review" },
     { "id": "hate.hanjian", "word": "汉奸", "severity": 2 },
     { "id": "hate.maiguozei", "word": "卖国贼", "severity": 2 },
     { "id": "hate.zougou", "word": "走狗", "severity": 2 },
@@ -26,6 +24,7 @@
     { "id": "hate.spic", "word": "spic" },
     { "id": "hate.wetback", "word": "wetback" },
     { "id": "hate.tranny", "word": "tranny", "severity": 2 },
-    { "id": "hate.nazi", "word": "nazi", "aliases": ["nazis"] }
+    { "id": "hate.nazi", "word": "nazi", "aliases": ["nazis"] },
+    { "id": "hate.ribenzhu", "word": "日本猪", "severity": 4 }
   ]
 }

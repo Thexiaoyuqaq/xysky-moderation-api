@@ -10,6 +10,10 @@
     { "id": "spam.guanggaoji", "word": "广告机" },
     { "id": "spam.jiqirenshuaping", "word": "机器人刷屏" },
     { "id": "spam.lianxufasong", "word": "连续发送" },
-    { "id": "spam.chongfufasong", "word": "重复发送" }
+    { "id": "spam.chongfufasong", "word": "重复发送" },
+
+    { "id": "spam.fuzhi", "word": "复制粘贴", "severity": 1, "action": "review", "aliases": ["刷屏广告", "批量发送", "自动化发送"] },
+    { "id": "spam.zidonghu", "word": "自动化", "severity": 1, "action": "review" },
+    { "id": "spam.zhanghaoqun", "word": "小号", "severity": 1, "action": "review", "aliases": ["多小号", "小号群", "号池"] }
   ]
 }

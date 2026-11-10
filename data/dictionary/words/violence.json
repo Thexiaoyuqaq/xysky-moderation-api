@@ -22,7 +22,6 @@
     { "id": "violence.xianzhong", "word": "献忠", "aliases": [{ "word": "xz", "severity": 1, "action": "review" }] },
     { "id": "violence.zhadan", "word": "炸弹" },
     { "id": "violence.zhizuozhadan", "word": "制作炸弹" },
-    { "id": "violence.tuzhizhadan", "word": "土制炸弹" },
     { "id": "violence.qiangzhi", "word": "枪支" },
     { "id": "violence.kaiqiang", "word": "开枪" },
     { "id": "violence.shesha", "word": "射杀" },
@@ -35,6 +34,13 @@
     { "id": "violence.leiguan", "word": "雷管" },
     { "id": "violence.ranshaoping", "word": "燃烧瓶" },
     { "id": "violence.zishaxiji", "word": "自杀式袭击" },
-    { "id": "violence.terrorist", "word": "terrorist", "aliases": ["terrorists"] }
+    { "id": "violence.terrorist", "word": "terrorist", "aliases": ["terrorists"] },
+
+    { "id": "violence.kannisi", "word": "砍死你", "severity": 4 },
+    { "id": "violence.dasini", "word": "打死你", "severity": 4 },
+    { "id": "violence.xianni", "word": "现实里找你", "severity": 3, "aliases": ["现实找你", "人肉你", "人肉搜索", "开盒你", "查你地址"] },
+    { "id": "violence.qiangji", "word": "枪击", "severity": 4 },
+    { "id": "violence.kongbu", "word": "恐怖分子", "severity": 4 },
+    { "id": "violence.zouren", "word": "揍你", "severity": 3, "aliases": ["打你一顿", "收拾你"] }
   ]
 }

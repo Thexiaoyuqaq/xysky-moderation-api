@@ -45,6 +45,25 @@
     { "id": "fraud.pianlazhu", "word": "骗蜡烛" },
     { "id": "fraud.pianxin", "word": "骗心", "severity": 2, "action": "review" },
     { "id": "fraud.pianjika", "word": "骗季卡" },
-    { "id": "fraud.maixin", "word": "卖心" }
+    { "id": "fraud.maixin", "word": "卖心" },
+
+    { "id": "fraud.chulazhu", "word": "出蜡烛", "severity": 3, "aliases": ["卖蜡烛", "收蜡烛", "求蜡烛", "出心", "求心"] },
+    { "id": "fraud.chuhui", "word": "出号", "severity": 3, "aliases": ["直出", "急出", "秒出", "低价出", "便宜出", "退游出号", "卖号退游"] },
+    { "id": "fraud.daigan", "word": "代肝", "severity": 3, "aliases": ["代献祭", "代跑图", "代刷蜡烛", "代做任务", "包月卡"] },
+    { "id": "fraud.baoqi", "word": "包毕业", "severity": 3, "aliases": ["包季节", "包任务", "包献祭"] },
+    { "id": "fraud.zoupingtai", "word": "走平台", "severity": 3, "aliases": ["走某宝", "走闲鱼", "走转转", "走担保", "担保交易", "走第三方"] },
+    { "id": "fraud.xianqian", "word": "先钱后货", "severity": 3, "aliases": ["先付后发", "先款后货", "先转账", "先给钱"] },
+    { "id": "fraud.yajin", "word": "押金", "severity": 2, "action": "review", "aliases": ["交押金", "付定金", "先交定金"] },
+    { "id": "fraud.neibunei", "word": "内部号", "severity": 4, "action": "block", "aliases": ["内部资源", "内部渠道", "内部福利", "内部资格", "官方内部"] },
+    { "id": "fraud.fulihao", "word": "福利号", "severity": 4, "action": "block", "aliases": ["福利账号", "白给号", "免费送号", "送号", "领号", "白嫖号"] },
+    { "id": "fraud.xianshilingqu", "word": "限时领取", "severity": 3, "aliases": ["点击领取", "领取链接", "注册领", "免费领取", "限时免费", "限量领取"] },
+    { "id": "fraud.chongzhifanli", "word": "充值返利", "severity": 4, "action": "block", "aliases": ["充值优惠", "充值返现", "首充返利", "返利活动", "充值送"] },
+    { "id": "fraud.yaoqingma", "word": "邀请码", "severity": 2, "action": "review", "aliases": ["邀请链接", "我的邀请码", "填我邀请码"] },
+    { "id": "fraud.kanjiangli", "word": "做任务赚钱", "severity": 3, "aliases": ["看广告赚钱", "点赞赚钱", "做任务领钱", "玩游戏赚钱", "挂机赚钱"] },
+    { "id": "fraud.daipai", "word": "代拍", "severity": 2, "action": "review", "aliases": ["代付", "代下单", "帮付"] },
+    { "id": "fraud.zhanghaozulin", "word": "账号租借", "severity": 3, "aliases": ["租号", "借号", "共享账号", "账号共享"] },
+    { "id": "fraud.youxiheike", "word": "游戏黑客服", "severity": 4, "action": "block" },
+    { "id": "fraud.xinyongka", "word": "信用卡套现", "severity": 4, "action": "block", "aliases": ["套现", "刷信用卡"] },
+    { "id": "fraud.jiekuan", "word": "无抵押贷款", "severity": 4, "action": "block", "aliases": ["无抵押放款", "秒下款", "低息贷款", "借条放款"] }
   ]
 }
